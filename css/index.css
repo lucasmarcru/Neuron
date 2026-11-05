@@ -1,0 +1,39 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap');
+
+
+:root {
+    --color-dark: #1F1F1F;
+    --color-light: #F3F3F3;
+    --color-brand: #4391F0;
+
+
+    /* Sizes */
+    /*
+8 xxs
+10 xs
+16 sm
+32 md
+64 lg
+*/
+
+    --size-xxs: .5rem;
+    --size-xs: .625rem;
+    --size-sm: .1rem;
+    --size-md: .2rem;
+    --size-lg: .4rem;
+
+    --size-block: 60.25rem;
+    --size-canvas: 90rem;
+
+
+/* Fonts */
+
+--font-h1: 400 clamp(3rem, 5vw, 4rem) "Hedvig Letters Serif" , Serif;
+--font-h2: 400 clamp(1.5rem, 5vw, 2.125rem) "Hedvig Letters Serif" , Serif;
+--font-h3: 400 clamp(1.1875rem, 5vw, 1.5rem) "Hedvig Letters Serif" , Serif;
+--font-h4: 400 clamp(1.1875rem, 5vw, 1.1875rem) "Instrument Sans", sans-serif;
+--font-p: 400 .9375rem "Instrument Sans", sans-serif;
+--font-link: 500 .9375rem "Instrument Sans", sans-serif;
+}
