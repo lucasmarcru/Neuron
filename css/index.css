@@ -1,7 +1,4 @@
-
-
 @import url('https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap');
-
 
 :root {
     --color-dark: #1F1F1F;
@@ -20,20 +17,181 @@
 
     --size-xxs: .5rem;
     --size-xs: .625rem;
-    --size-sm: .1rem;
-    --size-md: .2rem;
-    --size-lg: .4rem;
+    --size-sm: 1rem;
+    --size-md: 2rem;
+    --size-lg: 4rem;
 
     --size-block: 60.25rem;
     --size-canvas: 90rem;
 
+    /* radius */
+--radius-small: .3125rem;
 
-/* Fonts */
+    /* Fonts */
 
---font-h1: 400 clamp(3rem, 5vw, 4rem) "Hedvig Letters Serif" , Serif;
---font-h2: 400 clamp(1.5rem, 5vw, 2.125rem) "Hedvig Letters Serif" , Serif;
---font-h3: 400 clamp(1.1875rem, 5vw, 1.5rem) "Hedvig Letters Serif" , Serif;
---font-h4: 400 clamp(1.1875rem, 5vw, 1.1875rem) "Instrument Sans", sans-serif;
---font-p: 400 .9375rem "Instrument Sans", sans-serif;
---font-link: 500 .9375rem "Instrument Sans", sans-serif;
+    --font-h1: 400 clamp(3rem, 5vw, 4rem) "Hedvig Letters Serif", serif;
+    --font-h2: 400 clamp(1.5rem, 5vw, 2.125rem) "Hedvig Letters Serif", serif;
+    --font-h3: 400 clamp(1.1875rem, 5vw, 1.5rem) "Hedvig Letters Serif", serif;
+    --font-h4: 400 clamp(1.1875rem, 5vw, 1.1875rem) "Instrument Sans", sans-serif;
+    --font-p: 400 .9375rem "Instrument Sans", sans-serif;
+    --font-link: 500 .9375rem "Instrument Sans", sans-serif;
 }
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Instrument Sans", sans-serif;
+}
+
+img {
+    max-width: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+ul, ol{
+    list-style: none;
+}
+
+
+/* Components */
+
+h1,
+.heading-h1 {
+    font: var(--font-h1);
+}
+
+h2,
+.heading-h2 {
+    font: var(--font-h2);
+}
+
+h3,
+.heading-h3 {
+    font: var(--font-h3);
+}
+
+h4,
+.heading-h4 {
+    font: var(--font-h4);
+}
+
+p,
+span,
+link,
+.font-p {
+    font: var(--font-p)
+}
+
+a,
+.font-link {
+    font: var(--font-link)
+}
+
+a.btn {
+    padding: var(--size-xs) var(--size-md);
+    display: inline-flex;
+    gap: var(--size-xs);
+    align-items: center;
+    border-radius: 100px;
+
+    &.btn--dark {
+        background-color: var(--color-dark);
+        color: var(--color-light);
+    }
+
+
+    &.btn--light {
+        background-color: var(--color-light);
+        color: var(--color-dark);
+    }
+    &:hover{ 
+        opacity: 80%;
+}
+transition: opacity 300ms;
+}
+
+.menu-link{
+    opacity: 50%;
+    &:hover {
+        opacity: 100%;
+    }
+    transition: opacity 200ms;
+
+}
+
+.img-radius{
+    border-radius: var(--radius-small);
+}
+
+.block{
+    max-width: var(--size-block);
+    margin: 0 auto;
+}
+.section{
+    padding: var(--size-lg) var(--size-sm);
+    max-width: var(--size-canvas);
+    margin: 0 auto;
+}
+
+/* Header */
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: var(--size-md);
+    align-items: center;
+
+    max-width: var(--size-canvas);
+    margin: 0 auto;
+}
+
+.header__logo{
+    max-width: 5.75rem;
+}
+
+.header__nav{
+    display: flex;
+    gap: var(--size-md);
+}
+
+
+
+/* Hero */
+
+.hero{
+    max-width: var(--size-canvas);
+    margin: 0 auto;
+    padding: 0 var(--size-xs);    
+}
+.hero__background{
+background-color: var(--color-dark);
+padding: var(--size-md);
+color:var(--color-light);
+min-height: 80vh;
+border-radius: var(--radius-small);
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+background: rgba(31, 31, 31, 0.1);
+background: linear-gradient(90deg, rgba(31, 31, 31, 0.2) 0%, rgba(31, 31, 31, 1) 100%) , url('../media/Home-banner.webp'); 
+
+}
+.hero__block{
+display: flex;
+flex-direction: column;
+align-items: start;
+gap: var(--size-sm);
+width: 100%;
+}
+
+
+
+
