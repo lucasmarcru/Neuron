@@ -140,6 +140,7 @@ transition: opacity 300ms;
     margin: 0 auto;
 }
 
+
 /* Header */
 
 .header{
@@ -155,14 +156,20 @@ transition: opacity 300ms;
 .header__logo{
     max-width: 5.75rem;
 }
+.open-menu{
+    display:none;
+
+    @media (max-width: 728px) {
+        display: inline-block;
+    }
+}
 
 .header__nav{
     display: flex;
     gap: var(--size-md);
-}
-
-
-
+    @media (max-width: 728px) {
+        display: none;
+    }}
 /* Hero */
 
 .hero{
@@ -182,16 +189,15 @@ flex-direction: column;
 justify-content: center;
 background: rgba(31, 31, 31, 0.1);
 background: linear-gradient(90deg, rgba(31, 31, 31, 0.2) 0%, rgba(31, 31, 31, 1) 100%) , url('../media/Home-banner.webp'); 
-
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
 }
 .hero__block{
 display: flex;
 flex-direction: column;
 align-items: start;
 gap: var(--size-sm);
-width: 100%;
-}
-
-
+width: 100%;}
 
 
