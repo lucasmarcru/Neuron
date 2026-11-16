@@ -25,6 +25,7 @@ conteinerquery - lo mismo pero con un contenedor */
     --color-dark: #1F1F1F;
     --color-light: #F3F3F3;
     --color-brand: #4391F0;
+    --color-error: #E26868;
 
     /* Sizes */
     --size-xxs: .5rem;
@@ -108,7 +109,7 @@ a,
     font: var(--font-link)
 }
 
-a.btn {
+.btn {
     padding: var(--size-xs) var(--size-md);
     display: inline-flex;
     gap: var(--size-xs);
@@ -131,6 +132,10 @@ a.btn {
     }
 
     transition: opacity 300ms;
+}
+
+input, select {
+    
 }
 
 .menu-link {
@@ -271,6 +276,7 @@ a.btn {
 .features__block {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: var(--size-sm);
 }
 
 .features__card {
@@ -296,16 +302,91 @@ a.btn {
 }
 .services__grid{
     display: grid;
-    grid-template-columns: repeat(auto-fit(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: var(--size-md);
     padding: var(--size-md) 0;
     align-self: stretch; 
 }
 .services__card{
-    display: flex;
     flex-direction: column;
     gap: var(--size-md);
     & img {
         max-height: 11rem;
     }
 }
+
+/* Prices */
+
+.prices__block{
+    display: flex;
+    gap: var(--size-md);
+    flex-wrap: wrap;
+}
+.prices__card{
+    display: flex;
+    flex: 1 1 280px;
+    flex-direction: column;
+    gap: var(--size-md);
+
+    padding: var(--size-md);
+    background-color: var(--color-light);
+    border-radius: var(--radius-small);
+
+&.prices__card--dark{
+    background-color: var(--color-dark);
+    color: var(--color-light);
+    
+}
+& ul {
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-xs);
+    & li {
+        display: flex;
+            gap: var(--size-md);
+                    & .red {
+            color: var(--color-error);
+}
+}
+}
+}
+.prices__head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--size-sm);
+
+    & .btn {
+        align-self: stretch;
+        justify-content: center;
+    }
+}
+
+
+/* Contact */
+
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-sm);
+}
+.form__columns{
+    display: flex;
+    gap: var(--size-sm);
+    flex-wrap: wrap;
+
+    & .form__field {
+        flex: 1 1 320px;
+    }
+}
+.form__field{
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-xxs);
+& .form__field--acceptance {
+    flex-direction: row-reverse;
+    justify-content: start;;
+}
+}
+
+
