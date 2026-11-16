@@ -135,7 +135,22 @@ a,
 }
 
 input, select {
-    
+    padding: var(--size-sm); 
+    border-radius: 100px;
+    background-color: var(--color-light);
+    border: 1px solid transparent;
+    &:hover {
+        opacity: 80%;
+    }
+    &:focus {
+        border: 1px  solor var(--color-dark);
+        outline: none;
+    }
+    transition: opacity 250ms, border 250ms;
+}
+
+label:not([for="acceptance"]) {
+    display: none;
 }
 
 .menu-link {
