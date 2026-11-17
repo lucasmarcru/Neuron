@@ -134,19 +134,24 @@ a,
     transition: opacity 300ms;
 }
 
-input, select {
-    padding: var(--size-sm); 
+input,
+select {
+    padding: var(--size-sm);
     border-radius: 100px;
     background-color: var(--color-light);
     border: 1px solid transparent;
+
     &:hover {
         opacity: 80%;
     }
+
     &:focus {
-        border: 1px  solor var(--color-dark);
+        border: 1px solid var(--color-dark);
         outline: none;
     }
-    transition: opacity 250ms, border 250ms;
+
+    transition: opacity 250ms,
+    border 250ms;
 }
 
 label:not([for="acceptance"]) {
@@ -234,8 +239,10 @@ label:not([for="acceptance"]) {
     background: rgba(31, 31, 31, 0.1);
     background: linear-gradient(90deg, rgba(31, 31, 31, 0.2) 0%, rgba(31, 31, 31, 1) 100%), url('../media/Home-banner.webp');
     background-position: center;
-    background-repeat: no-repeat; /* para que la imagen no se repita cuando es pequeña */
-    background-size: cover; /* cubrir para que la imagen se adapte */
+    background-repeat: no-repeat;
+    /* para que la imagen no se repita cuando es pequeña */
+    background-size: cover;
+    /* cubrir para que la imagen se adapte */
 }
 
 .hero__block {
@@ -266,7 +273,7 @@ label:not([for="acceptance"]) {
     border-radius: var(--radius-samll);
 
     @media (max-width: 768px) {
-    order: -1;
+        order: -1;
     }
 }
 
@@ -300,7 +307,7 @@ label:not([for="acceptance"]) {
     gap: var(--size-sm);
 
     & h3 {
-        display: inline-flex; 
+        display: inline-flex;
         gap: var(--size-md);
         align-items: center;
     }
@@ -309,22 +316,25 @@ label:not([for="acceptance"]) {
 
 /* Services */
 
-.services__block{
+.services__block {
     display: flex;
     flex-direction: column;
     align-items: start;
     gap: var(--size-md);
 }
-.services__grid{
+
+.services__grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: var(--size-md);
     padding: var(--size-md) 0;
-    align-self: stretch; 
+    align-self: stretch;
 }
-.services__card{
+
+.services__card {
     flex-direction: column;
     gap: var(--size-md);
+
     & img {
         max-height: 11rem;
     }
@@ -332,12 +342,13 @@ label:not([for="acceptance"]) {
 
 /* Prices */
 
-.prices__block{
+.prices__block {
     display: flex;
-    gap: var(--size-md);
+    gap: var(--size-sm);
     flex-wrap: wrap;
 }
-.prices__card{
+
+.prices__card {
     display: flex;
     flex: 1 1 280px;
     flex-direction: column;
@@ -347,25 +358,29 @@ label:not([for="acceptance"]) {
     background-color: var(--color-light);
     border-radius: var(--radius-small);
 
-&.prices__card--dark{
-    background-color: var(--color-dark);
-    color: var(--color-light);
-    
-}
-& ul {
-    display: flex;
-    flex-direction: column;
-    gap: var(--size-xs);
-    & li {
+    &.prices__card--dark {
+        background-color: var(--color-dark);
+        color: var(--color-light);
+
+    }
+
+    & ul {
         display: flex;
+        flex-direction: column;
+        gap: var(--size-xs);
+
+        & li {
+            display: flex;
             gap: var(--size-md);
-                    & .red {
-            color: var(--color-error);
+
+            & .red {
+                color: var(--color-error);
+            }
+        }
+    }
 }
-}
-}
-}
-.prices__head{
+
+.prices__head {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -380,12 +395,13 @@ label:not([for="acceptance"]) {
 
 /* Contact */
 
-.form{
+.form {
     display: flex;
     flex-direction: column;
     gap: var(--size-sm);
 }
-.form__columns{
+
+.form__columns {
     display: flex;
     gap: var(--size-sm);
     flex-wrap: wrap;
@@ -394,14 +410,14 @@ label:not([for="acceptance"]) {
         flex: 1 1 320px;
     }
 }
-.form__field{
+
+.form__field {
     display: flex;
     flex-direction: column;
     gap: var(--size-xxs);
-& .form__field--acceptance {
-    flex-direction: row-reverse;
-    justify-content: start;;
-}
-}
 
-
+    & .form__field--acceptance {
+        flex-direction: row-reverse;
+        justify-content: start;
+    }
+} 
