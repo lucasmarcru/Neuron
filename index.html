@@ -217,28 +217,29 @@
 
         <section class="contact__section">
             <div class="contact__block block">
-                <iframe
+                <iframe class="contact__map"
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12322.487684274334!2d-0.3815620739463392!3d39.45527661374534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6048cdf29556f9%3A0x7192152a61e92151!2sEn%20Corts%2C%20Quatre%20Carreres%2C%20Valencia!5e0!3m2!1ses!2ses!4v1794844198724!5m2!1ses!2ses"
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                    allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
                 <div class="contact__content">
-                    <h2>Contact with us</h2>
-                    <p>You can also check other ways to contact us on the contact page.</p>
-                    <form action="#" method="post">
+                    <div class="contact__heading">
+                        <h2>Contact with us</h2>
+                        <p>You can also check other ways to contact us on the contact page.</p>
+                    </div>
+                    <form class="form" action="#" method="post">
                         <div class="form__columns">
                             <div class="form__field">
                                 <label for="name">Name</label>
-                                <input id="name" name="name" type="text">
+                                <input id="name" name="name" type="text" placeholder="Name">
                             </div>
 
                             <div class="form__field">
                                 <label for="surname">Surname</label>
-                                <input id="surname" name="surname" type="text">
+                                <input id="surname" name="surname" type="text" placeholder="Surname">
                             </div>
                         </div>
                         <div class="form__field">
                             <label for="email">E-mail</label>
-                            <input id="email" name="email" type="email">
+                            <input id="email" name="email" type="email" placeholder="Email">
                         </div>
 
                         <div class="form__field">
@@ -255,21 +256,88 @@
                             <label for="acceptance">I have read and accept the privacy policy</label>
                             <input id="acceptance" name="acceptance" type="checkbox" required>
                         </div>
-                        <button type="submit" class="btn btn--dark">Send<i class="ri-arrow-right-up-line"></i>
+                        <button type="submit" class="btn btn--submit">Send<i class="ri-arrow-right-up-line"></i>
                         </button>
 
+                    </form>
                 </div>
-                </form>
             </div>
-
-
-
-
-
         </section>
 
 
-    </main>
+        <!-- News -->
+        <section class="news section">
+            <div class="news__block block">
+                <div class="news__top">
+                    <h2>Latest post</h2>
+                    <a href="news.html" class="btn btn--dark">Go read all our posts<i
+                            class="ri-arrow-right-up-line"></i></a>
+                </div>
+
+                <ul class="news__grid">
+                    <li class="news__post">
+                        <picture>
+                            <source srcset="media/news-1.avif" media="(min-width: 1024px)" type="image/avif">
+                            <source srcset="media/news-1.webp" media="(min-width: 600px)" type="image/webp">
+                            <img class="img-radius" src="media/news-1.jpg">
+                        </picture>
+                        <h3 class="heading-4">The Ultimate Guide to Digital Transformation for Small...</h3>
+                        <p>Embracing digital transformation is essential for small businesses seeking growth and
+                            resilience...</p>
+                        <a href="#" class="link">Read more</a>
+                    </li>
+
+                    <li class="news__post">
+                        <picture>
+                            <source srcset="media/news-2.avif" media="(min-width: 1024px)" type="image/avif">
+                            <source srcset="media/news-2.webp" media="(min-width: 600px)" type="image/webp">
+                            <img class="img-radius" src="media/news-2.jpg">
+                        </picture>
+                        <h3 class="heading-4">Why Cloud Solutions Are the Backbone of Modern Enterprises</h3>
+                        <p>Cloud technologies offer flexibility, security, and scalability for all types of
+                            organizations. Learn how cloud solutions...</p>
+                        <a href="#" class="link">Read more</a>
+                    </li>
+
+                    <li class="news__post">
+                        <picture>
+                            <source srcset="media/news-3.avif" media="(min-width: 1024px)" type="image/avif">
+                            <source srcset="media/news-3.webp" media="(min-width: 600px)" type="image/webp">
+                            <img class="img-radius" src="media/news-3.jpg">
+                        </picture>
+                        <h3 class="heading-4">Automate to Innovate: How Workflow Automation Boosts...</h3>
+                        <p>Implementing workflow automation helps eliminate repetitive tasks and human error. Explore
+                            key automation tools and...</p>
+                        <a href="#" class="link">Read more</a>
+                    </li>
+                </ul>
+                <span class="heading-h4">We write for you, with love from neuron.</span>
+            </div>
+        </section>
+        </main>
+
+        <!-- Footer -->
+
+        <footer class="footer">
+            <div class="footer__block">
+                <div class="footer__top"><img src="media/logo-light.svg" alt="" class="footer__logo">                
+                    <ul class="footer__media">
+                        <li><a href="#"><i class="ri-instagram-line"></i></a></li>
+                        <li><a href="#"><i class="ri-twitter-x-line"></i></a></li>
+                        <li><a href="#"><i class="ri-pinterest-line"></i></a></li>
+                        <li><a href="#"><i class="ri-linkedin-box-line"></i></a></li>
+                    </ul>
+                </div>
+
+                <ul class="footer__legal">
+                    <li><a href="#">Legal Notice</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Cookies Policy</a></li>
+                </ul>
+
+            </div>
+        </footer>
+
 </body>
 
 </html>
