@@ -241,6 +241,39 @@ label:not([for="acceptance"]) {
     }
 }
 
+
+/* Popup */
+
+#popup-menu {
+position: fixed; 
+top: 0;
+left: 0;
+width: 100vw;
+height: 100vh;  
+background-color: var(--color-light);
+display: none;
+align-items: center;
+padding: var(--size-lg);
+z-index: 10;
+
+&:target {
+    display: flex;
+}
+
+}
+.popup-menu__nav {
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-md);
+}
+.close-popup {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 2rem;
+}
+
+
 /* Hero */
 
 .hero {
