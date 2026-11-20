@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="icon" href="media/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.9.1/fonts/remixicon.min.css">
+</head>
+
+<body>
+
+
+    <!-- Header -->
+
+    <header class="header">
+        <img class="header__logo" alt="Neuron logo" src="media/logo-black.svg">
+        <nav>
+            <ul class="header__nav">
+                <li><a class="menu-link" href="index.html">Home</a></li>
+                <li><a class="menu-link" href="services.html">Services</a></li>
+                <li><a class="menu-link" href="about.html">About us</a></li>
+                <li><a class="menu-link" href="news.html">News</a></li>
+                <li><a class="menu-link" href="#price">Price</a></li>
+                <li><a class="menu-link" href="contact.html">Contact</a></li>
+            </ul>
+            <i class="open-menu ri-menu-line"></i>
+        </nav>
+    </header>
+
+    
+    <!-- Hero banner -->
+
+    <section class="hero-small">
+        <div class="hero-small__background hero-small__background--contact">
+            <div class="hero-small__block block">
+                <h1 class="heading-h2">Contact</h1>
+            </div>
+        </div>
+    </section>
+
+<main>
+
+    <!--features-->
+
+     <section class="features section">
+            <div class="features__block block">
+                <div class="features__card-dark">
+                    <h3 class="heading-h4"><i class="ri-phone-line"></i> us.</h3>
+                    <p>+57 00 846 679 225</p>
+                </div>
+                <div class="features__card-dark">
+                    <h3 class="heading-h4"><i class="ri-map-pin-3-line"></i>>Visit us.</h3>
+                    <p>C/ Fake Street, 5, 2B</p>
+                </div>
+                <div class="features__card-dark">
+                    <h3 class="heading-h4"><i class="ri-mail-line"></i>Write us.</h3>
+                    <p>info@neuron.com</p>
+                </div>
+                <div class="features__card-dark">
+                    <h3 class="heading-h4"><i class="ri-message-2-line"></i>Chat with us.</h3>
+                    <p>Click here to open the chat</p>
+                </div>
+
+            </div>
+        </section>
+
+<!-- Contact -->
+
+        <section class="contact__section">
+            <div class="contact__block block">
+                <iframe class="contact__map"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12322.487684274334!2d-0.3815620739463392!3d39.45527661374534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6048cdf29556f9%3A0x7192152a61e92151!2sEn%20Corts%2C%20Quatre%20Carreres%2C%20Valencia!5e0!3m2!1ses!2ses!4v1794844198724!5m2!1ses!2ses"
+                    allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                <div class="contact__content">
+                    <div class="contact__heading">
+                        <h2>Contact with us</h2>
+                        <p>You can also check other ways to contact us on the contact page.</p>
+                    </div>
+                    <form class="form" action="#" method="post">
+                        <div class="form__columns">
+                            <div class="form__field">
+                                <label for="name">Name</label>
+                                <input id="name" name="name" type="text" placeholder="Name">
+                            </div>
+
+                            <div class="form__field">
+                                <label for="surname">Surname</label>
+                                <input id="surname" name="surname" type="text" placeholder="Surname">
+                            </div>
+                        </div>
+                        <div class="form__field">
+                            <label for="email">E-mail</label>
+                            <input id="email" name="email" type="email" placeholder="Email">
+                        </div>
+
+                        <div class="form__field">
+                            <label for="services">Services</label>
+                            <select name="services" id="services">
+                                <option value="" selected disabled>Select the service</option>
+                                <option value="A">A</option>
+                                <option value="B">B</option>
+                                <option value="C">C</option>
+                            </select>
+                        </div>
+
+                        <div class="form__field form__field--acceptance">
+                            <label for="acceptance">I have read and accept the privacy policy</label>
+                            <input id="acceptance" name="acceptance" type="checkbox" required>
+                        </div>
+                        <button type="submit" class="btn btn--submit">Send<i class="ri-arrow-right-up-line"></i>
+                        </button>
+
+                    </form>
+                </div>
+            </div>
+        </section>
+</main>
+
+
+        <!-- Footer -->
+
+        <footer class="footer">
+            <div class="footer__block">
+                <div class="footer__top"><img src="media/logo-light.svg" alt="" class="footer__logo">                
+                    <ul class="footer__media">
+                        <li><a href="#"><i class="ri-instagram-line"></i></a></li>
+                        <li><a href="#"><i class="ri-twitter-x-line"></i></a></li>
+                        <li><a href="#"><i class="ri-pinterest-line"></i></a></li>
+                        <li><a href="#"><i class="ri-linkedin-box-line"></i></a></li>
+                    </ul>
+                </div>
+
+                <ul class="footer__legal">
+                    <li><a href="#">Legal Notice</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Cookies Policy</a></li>
+                </ul>
+
+            </div>
+        </footer>
+
+</body>
+</html>

@@ -164,9 +164,9 @@ select {
     }
 
     &::placeholder {
-font: var(--font-p);
-color: var(--color-dark);
-opacity: 30%;
+        font: var(--font-p);
+        color: var(--color-dark);
+        opacity: 30%;
     }
 
     transition: opacity 250ms,
@@ -245,27 +245,29 @@ label:not([for="acceptance"]) {
 /* Popup */
 
 #popup-menu {
-position: fixed; 
-top: 0;
-left: 0;
-width: 100vw;
-height: 100vh;  
-background-color: var(--color-light);
-display: none;
-align-items: center;
-padding: var(--size-lg);
-z-index: 10;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--color-light);
+    display: none;
+    align-items: center;
+    padding: var(--size-lg);
+    z-index: 10;
 
-&:target {
-    display: flex;
+    &:target {
+        display: flex;
+    }
+
 }
 
-}
 .popup-menu__nav {
     display: flex;
     flex-direction: column;
     gap: var(--size-md);
 }
+
 .close-popup {
     position: absolute;
     top: 1rem;
@@ -349,6 +351,13 @@ z-index: 10;
         background-repeat: no-repeat;
         background-size: cover;
     }
+
+    &.hero-small__background--contact {
+        background: linear-gradient(90deg, rgba(31, 31, 31, 0.8) 0%, rgba(31, 31, 31, 1) 100%), url('../media/Contact-banner.webp');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 }
 
 .hero-small__block {
@@ -405,6 +414,20 @@ z-index: 10;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: var(--size-sm);
+
+    & .features__card-dark {
+        background-color: var(--color-light);
+        display: flex;
+        flex-direction: column;
+        gap: var(--size-sm);
+
+        & h3 {
+        display: inline-flex;
+        gap: var(--size-md);
+        align-items: center;
+    }
+
+    }
 }
 
 .features__card {
@@ -502,24 +525,26 @@ z-index: 10;
 
 /* Contact */
 
-.contact__block{
+.contact__block {
     display: flex;
     gap: var(--size-lg);
     flex-wrap: wrap;
 }
-.contact__map{
+
+.contact__map {
     flex: 1 1 320px;
     border-radius: var(--radius-small);
     filter: grayscale(100%);
     border: 0;
 }
 
-.contact__content{
+.contact__content {
     display: flex;
     flex-direction: column;
     flex: 1 1 320px;
 }
-.contact__heading{
+
+.contact__heading {
     display: flex;
     flex-direction: column;
     gap: var(--size-md);
@@ -550,27 +575,30 @@ z-index: 10;
         flex-direction: row-reverse;
         justify-content: start;
     }
-} 
+}
 
 /* News */
 
-.news__block{
+.news__block {
     display: flex;
     flex-direction: column;
     gap: var(--size-sm);
 }
-.news__top{
+
+.news__top {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.news__grid{
+
+.news__grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: var(--size-sm);
-    padding: var(--size-sm) 0;}
+    padding: var(--size-sm) 0;
+}
 
-.news__post{
+.news__post {
     display: flex;
     flex-direction: column;
     gap: var(--size-sm);
@@ -579,11 +607,11 @@ z-index: 10;
 
 /* Footer */
 
-.footer{
+.footer {
     padding: var(--size-xs);
 }
 
-.footer__block{
+.footer__block {
     background-color: var(--color-dark);
     color: var(--color-light);
     border-radius: var(--radius-small);
@@ -592,16 +620,19 @@ z-index: 10;
     gap: var(--size-md);
     padding: var(--size-md);
 }
-.footer__top{
-display: flex;
-justify-content: space-between;
-align-items: center;
-padding: var(--size-sm) 0;
+
+.footer__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--size-sm) 0;
 }
-.footer__logo{
+
+.footer__logo {
     max-width: 8rem;
 }
-.footer__media{
+
+.footer__media {
     display: flex;
     gap: var(--size-sm);
 
@@ -609,19 +640,18 @@ padding: var(--size-sm) 0;
         font-size: 1.5rem;
     }
 }
-.footer__legal{
-display: flex;
-padding: var(--size-sm) 0;
-gap: var(--size-md);
-opacity: 80%;
+
+.footer__legal {
+    display: flex;
+    padding: var(--size-sm) 0;
+    gap: var(--size-md);
+    opacity: 80%;
 }
 
 
-.content-bottom{
-display: flex;
-flex-direction: column;
-padding:  var(--size-lg) var(--size-sm);
-gap: var(--size-xs);
+.content-bottom {
+    display: flex;
+    flex-direction: column;
+    padding: var(--size-lg) var(--size-sm);
+    gap: var(--size-xs);
 }
-
-
