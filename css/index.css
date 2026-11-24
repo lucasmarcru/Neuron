@@ -14,10 +14,26 @@ em - igual que rem pero se adapta al tamaño del contenedor y font-size mas cerc
 */
 
 /* max-width 100% - para que las imagenes grandes no se salga del contenedor
-width 100% - para que las imagenes peqeuñas ocupen todo el contenedor */
+width 100% - para que las imagenes pequeñas ocupen todo el contenedor */
 
-/*mediaquery - sirve para hacer resposnive he indicar que a x tamaño el objeto tiene que realizar x accion
+/* mediaquery - sirve para hacer resposnive he indicar que a x tamaño el objeto tiene que realizar x accion
 conteinerquery - lo mismo pero con un contenedor */
+
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        filter: blur(1rem);
+        transform: translateY(2rem);
+    /* clip path - para cortar, hacer barridos del contenido */
+    }
+
+    to {
+        opacity: 100%;
+        filter: blur(0);
+        transform: translateY(0);
+    }
+}
 
 :root {
 
@@ -48,6 +64,16 @@ conteinerquery - lo mismo pero con un contenedor */
     --font-h4: 400 clamp(1.1875rem, 5vw, 1.1875rem) "Instrument Sans", sans-serif;
     --font-p: 400 .9375rem "Instrument Sans", sans-serif;
     --font-link: 500 .9375rem "Instrument Sans", sans-serif;
+}
+
+/* Animation */
+
+.anim-appear {
+    animation-name: appear;
+    animation-duration: 300ms;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    animation-timeline: view(block 90% 0%);
 }
 
 
